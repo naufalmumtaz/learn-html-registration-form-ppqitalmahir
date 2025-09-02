@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Registration Form - Naufal Mumtaz A - PPQIT AL - Mahir</title>
+  </head>
+  <body>
+    <h2>FORMULIR PENDAFTARAN</h2>
+
+    <p>Beragbunglah dengan komunitas kami</p>
+
+    <div class="form">
+      <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Informasi Pribadi</legend>
+
+          <div class="input-container">
+            <div class="input-item">
+              <label for="fullname">Nama Lengkap:</label>
+              <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                placeholder="Masukkan nama lengkap"
+                required
+              />
+            </div>
+            <div class="input-item">
+              <label for="email">Alamat Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="contoh@email.com"
+                required
+              />
+            </div>
+            <div class="input-item">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Minimal 8 karakter"
+                required
+              />
+            </div>
+            <div class="input-item">
+              <label for="born_date">Tanggal Lahir:</label>
+              <input
+                type="date"
+                name="born_date"
+                id="born_date"
+                placeholder="Minimal 8 karakter"
+                required
+              />
+            </div>
+            <div class="input-item">
+              <label for="phone">No HP:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="0812-3456-7890"
+                required
+              />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Informasi Tambahan</legend>
+
+          <div class="input-container">
+            <div class="input-item">
+              <label for="gender">Jenis Kelamin:</label><br />
+
+              <input type="radio" name="gender" value="male" id="male" />
+              <label for="male">Laki - Laki</label>
+
+              <input type="radio" name="gender" value="female" id="female" />
+              <label for="female">Perempuan</label>
+            </div>
+            <div class="input-item">
+              <label for="email">Provinsi:</label>
+              <select name="province" id="province">
+                <option value="" disabled selected>Pilih provinsi</option>
+                <option value="JAWA TENGAH">JAWA TENGAH</option>
+              </select>
+            </div>
+            <div class="input-item">
+              <label for="habits">Hobi (Bisa pilih lebih dari satu):</label>
+              <br />
+
+              <input
+                type="checkbox"
+                name="reading"
+                id="reading"
+                value="reading"
+              />
+              <label for="reading">Membaca</label>
+
+              <input
+                type="checkbox"
+                name="exercise"
+                id="exercise"
+                value="exercise"
+              />
+              <label for="exercise">Olahraga</label>
+
+              <input type="checkbox" name="music" id="music" value="music" />
+              <label for="music">Musik</label>
+
+              <input
+                type="checkbox"
+                name="traveling"
+                id="traveling"
+                value="traveling"
+              />
+              <label for="traveling">Traveling</label>
+            </div>
+            <div class="input-item">
+              <label for="bio">Biodata Singkat:</label>
+              <textarea
+                name="bio"
+                id="bio"
+                placeholder="Ceritakan sedikit tentang anda"
+              ></textarea>
+            </div>
+            <div class="input-item">
+              <label for="photo_profile">Upload Foto Profil:</label>
+              <input
+                type="file"
+                name="photo_profile"
+                id="photo_profile"
+                placeholder="0812-3456-7890"
+                required
+              />
+            </div>
+          </div>
+        </fieldset>
+        <input type="checkbox" name="agreed" id="agreed" />
+        <label for="agreed"
+          >Saya menyetujui <a href="#">syarat & ketentuan</a> yang
+          berlaku</label
+        ><br />
+
+        <button type="submit">Daftar Sekarang</button>
+        <button type="reset">Reset Form</button>
+      </form>
+    </div>
+  </body>
+</html>
