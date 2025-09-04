@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4e4e4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.card {
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-header h2 {
+  text-align: center;
+  color: #1e293b;
+}
+
+.card .card-header p {
+  text-align: center;
+  color: #71717a;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.card .card-body fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.card .card-body fieldset legend {
+  color: #1e293b;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0px 5px;
+}
+
+.card .card-body fieldset .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.card .card-body fieldset .input-container .input-item {
+  width: 100%;
+}
+
+.card .card-body fieldset .input-container .input-item label {
+  font-weight: 500;
+}
+
+.card .card-body fieldset .input-container .input-item label {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.card .card-body fieldset .input-container .input-item input[type="text"],
+.card .card-body fieldset .input-container .input-item input[type="email"],
+.card .card-body fieldset .input-container .input-item input[type="password"],
+.card .card-body fieldset .input-container .input-item input[type="date"],
+.card .card-body fieldset .input-container .input-item input[type="tel"],
+.card .card-body fieldset .input-container .input-item select,
+.card .card-body fieldset .input-container .input-item textarea {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+.card .card-body fieldset .input-container .input-item input[type="file"] {
+  width: 100%;
+}
+
+.card .card-body fieldset .input-container .input-item .input-gender {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+}
+
+.card
+  .card-body
+  fieldset
+  .input-container
+  .input-item
+  .input-gender
+  .input-gender-item {
+  display: flex;
+  gap: 10px;
+}
+
+.card .card-body fieldset .input-container .input-item .input-habits {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+}
+
+.card .card-body fieldset .input-container .input-item .input-habits-item {
+  display: flex;
+  gap: 10px;
+}
+
+.card .card-footer .agree-information {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card .card-footer .action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card .card-footer .action .btn-registration {
+  background-color: #34d399;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+.card .card-footer .action .btn-reset {
+  background-color: #ef4444;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+/* TABLET UP */
+@media (min-width: 768px) {
+  .card {
+    width: 60%;
+  }
+  .card .card-body fieldset .input-container .input-item .input-gender {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card .card-body fieldset .input-container .input-item .input-habits {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* DESKTOP UP */
+@media (min-width: 992px) {
+}
